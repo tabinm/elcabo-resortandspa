@@ -1,0 +1,262 @@
+body {
+  background-color: #7b2626;
+}
+header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #7b2626;
+}
+
+@media screen and (max-width: 39.9375em){
+  header .menu {
+    /* position menu on top, full screen */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    /* position content in vertical center */
+    flex-direction: column;
+    justify-content: center;
+    /* add styling details */
+    padding: 2rem;
+    background-color: #212121;
+  }
+  header .menu li {
+    /* override Foundation class and align content on left */
+    justify-content: flex-start !important;
+    /* add styling details */
+    font-size: 2rem;
+  }
+  header .menu li a {
+    /* add styling details */
+    color: #ffffff;
+  }
+  header button {
+    cursor: pointer;
+  }
+  header button.show-for-small-only {
+    position: relative;
+    z-index: 2;
+  }
+  header button.show-for-small-only.btnToggle {
+    color: #ffffff;
+  }
+}
+
+.logo {
+  text-decoration: none;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #212121;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #212121;
+}
+
+/* nav should always be avilable on wide screens */
+@media screen and (min-width: 40em){
+  nav {
+    position: static;
+    z-index: 0;
+    flex-direction: row;
+    gap: 2rem;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
+}
+.img1 {
+  background-color: transparent;
+}
+
+nav a {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 40em){
+  nav a {
+    font-size: 1rem;
+    color: #212121;
+  }
+}
+
+/* toggle/button is not needed on wide screens */
+@media screen and (min-width: 40em){
+  .toggle-menu {
+    display: none;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+/* hide class is not needed on wide screens */
+@media screen and (min-width: 40em){
+  .hide {
+    display: flex;
+  }
+
+.hero {
+  height: 100vh;
+  padding: 0 5rem;
+  display: grid;
+  place-items: center;
+  background-image: url(../img/hero-1.jpg);
+}
+
+.hero .background-image {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 40em){
+  .hero .text p {
+    font-size: 5rem;
+  }
+}
+
+/* CodePen styling only */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Basic Sans;
+}
+.booking {
+  background-color: #b9dfce;
+  padding: 0rem;
+}
+
+}
+h1 {
+ padding: 1rem;
+ color: #b9dfce;
+}
+p {
+  padding: 1rem;
+  color: #FFFFFF;
+}
+a.button {
+  /* overlap detail */
+  margin-top: -7rem;
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+  /* override background color */
+  background-color: #7b2626;
+
+  /* set the type color */
+  color: #fff;
+  /* set the text details */
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+
+
+/* style hover state */
+
+a.button:hover {
+  /* override background color */
+  background-color: #7b2626;
+}
+thead {
+  background-color: #b9dfce;
+}
+input {
+  background-color: #7b2626;
+}
+a2.button {
+background-color: #b9dfce;
+padding-left: 1rem;
+color: #7b2626;
+}
+a2.button:hover {
+  background-color: #ffffff;
+  color: #7b2626;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #7b2626;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #ffffff;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+.grid-x {
+  padding: 0rem;
+}
+footer {
+  background-color: #ffffff;
+}
+.body-1 {
+  background-color: #7b2626;
+  margin-top: 50px;}
+.body-2 {
+  background-color: #7b2626;
+  margin-top: 0px;
+}
+h2 {
+  color: #7b2626;
+}
+footer p {
+  color: #707070;
+}
+
+div {
+  padding: 0rem;
+  margin-top: 0px;
+}
